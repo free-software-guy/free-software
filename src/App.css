@@ -1,38 +1,80 @@
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f4f7fa; /* Light grayish-blue BG taaki rich lage */
+  min-height: 100vh; /* Pura page cover ho */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header {
+  background-color: #1a3c5e; /* Darker blue header ke liye */
+  padding: 20px;
   color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Thodi shadow header mein */
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  padding: 20px;
+  background-color: #ffffff; /* White BG cards ke liye contrast */
+  border-radius: 8px; /* Thodi rounded feel */
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px; /* Thoda bada font */
+}
+
+.software-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.software-card {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  width: 180px;
+  border-radius: 5px;
+  background-color: #fff; /* White card BG */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Thodi zyada shadow card mein */
+  transition: transform 0.2s; /* Hover effect ke liye */
+}
+
+.software-card:hover {
+  transform: translateY(-5px); /* Card upar uthega hover pe */
+}
+
+.software-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #1a3c5e; /* Header ka color match */
+}
+
+.software-card p {
+  font-size: 14px;
+  color: #555; /* Thoda dark gray text */
+}
+
+.software-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #1a3c5e; /* Button ko header se match kiya */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.software-card a:hover {
+  background-color: #0f2a44; /* Darker shade on hover */
 }
