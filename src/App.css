@@ -1,25 +1,25 @@
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  background-color: #f4f7fa; /* Light grayish-blue BG taaki rich lage */
-  min-height: 100vh; /* Pura page cover ho */
+  background-color: #f4f7fa;
+  min-height: 100vh;
 }
 
 header {
-  background-color: #1a3c5e; /* Darker blue header ke liye */
+  background-color: #1a3c5e;
   padding: 20px;
   color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Thodi shadow header mein */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 main {
   padding: 20px;
-  background-color: #ffffff; /* White BG cards ke liye contrast */
-  border-radius: 8px; /* Thodi rounded feel */
+  background-color: #ffffff;
+  border-radius: 8px;
   margin: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 input {
@@ -30,7 +30,30 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 16px; /* Thoda bada font */
+  font-size: 16px;
+}
+
+.category-buttons {
+  margin-bottom: 20px;
+}
+
+.category-buttons button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.category-buttons button.active {
+  background-color: #1a3c5e;
+  color: white;
+}
+
+.category-buttons button:hover {
+  background-color: #c0c0c0;
 }
 
 .software-list {
@@ -43,38 +66,44 @@ input {
 .software-card {
   border: 1px solid #e0e0e0;
   padding: 15px;
-  width: 180px;
+  width: 200px;
   border-radius: 5px;
-  background-color: #fff; /* White card BG */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Thodi zyada shadow card mein */
-  transition: transform 0.2s; /* Hover effect ke liye */
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
 .software-card:hover {
-  transform: translateY(-5px); /* Card upar uthega hover pe */
+  transform: translateY(-5px);
+}
+
+.software-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
 }
 
 .software-card h3 {
   margin: 0 0 10px;
   font-size: 18px;
-  color: #1a3c5e; /* Header ka color match */
+  color: #1a3c5e;
 }
 
 .software-card p {
   font-size: 14px;
-  color: #555; /* Thoda dark gray text */
+  color: #555;
 }
 
 .software-card a {
   display: inline-block;
   margin-top: 10px;
   padding: 6px 12px;
-  background-color: #1a3c5e; /* Button ko header se match kiya */
+  background-color: #1a3c5e;
   color: white;
   text-decoration: none;
   border-radius: 4px;
 }
 
 .software-card a:hover {
-  background-color: #0f2a44; /* Darker shade on hover */
+  background-color: #0f2a44;
 }
